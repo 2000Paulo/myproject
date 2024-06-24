@@ -1,0 +1,82 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte elegante */
+    background-color: #f0f0f0; /* Cor de fundo neutra */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo na página */
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do conteúdo */
+    border: 1px solid #ccc; /* Borda ao redor do conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #333; /* Cor do título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+li {
+    background-color: #fafafa; /* Cor de fundo dos itens da lista */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Borda inferior fina */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #4CAF50; /* Cor dos links */
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+a.delete {
+    color: #f44336; /* Cor vermelha para links de exclusão */
+}
+
+a.delete:hover {
+    color: #d32f2f; /* Cor vermelha mais escura ao passar o mouse */
+}
+
+a.edit {
+    color: #2196F3; /* Cor azul para links de edição */
+}
+
+a.edit:hover {
+    color: #1976D2; /* Cor azul mais escura ao passar o mouse */
+}
+
+.add-new {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+button {
+    background-color: #013f16; /* Cor de fundo do botão */
+    color: white; /* Cor do texto no botão */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Borda arredondada */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #436e51; /* Cor de fundo do botão ao passar o mouse */
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Objetos</title>
+    <link rel="stylesheet" href="../../static/css/style_list.css">
+</head>
+<body>
+    
+    <div class="container">
+        <a href="{% url 'home' %}"><button>Return</button></a>
+        <h2>Lista de Anotações</h2>
+        <ul>
+            {% for objeto in objetos %}
+            <li>
+                {{ objeto }} - 
+                <a class="delete" href="{% url 'deletar_objeto' objeto.id %}">Excluir</a> - 
+                <a class="edit" href="{% url 'atualizar_objeto' objeto.id %}">Editar</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a class="add-new" href="{% url 'criar_objeto' %}"><button>Adicionar Novo Objeto</button></a>
+    </div>
+</body>
+</html>

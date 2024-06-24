@@ -1,0 +1,80 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte elegante */
+    background-image: url(journal-2850091.jpg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo na página */
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do conteúdo */
+    border: 1px solid #ccc; /* Borda ao redor do conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1, h2 {
+    color: #ffffff; /* Cor do título */
+    text-align: center;
+    color: #fff; /* Cor do texto */
+    -webkit-text-stroke: 0.3px #929292; /* Contorno com 1px de largura e cor preta */
+
+}
+
+p {
+    text-align: center;
+    color: #ffffff; /* Cor do texto */
+}
+
+ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #013f16; /* Cor de fundo do botão */
+    color: white; /* Cor do texto no botão */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Borda arredondada */
+    border: none;
+}
+
+button:hover {
+    background-color: #436e51; /* Cor de fundo do botão ao passar o mouse */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #4CAF50; /* Cor dos links */
+}
+
+a:hover {
+    color: #45a049; /* Cor dos links ao passar o mouse */
+}
+.sair {
+    background-color: #013f16; /* Cor de fundo do botão */
+    color: white; /* Cor do texto no botão */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Borda arredondada */
+    border: none;
+}
+.sair:hover {
+    background-color: #436e51;
+}

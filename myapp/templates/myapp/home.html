@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2</title>
+    <link rel="stylesheet" href="../../static/css/style_home.css">
+</head>
+<body>
+    <h1>Bem-vindo ao Caderno Digital!</h1>
+    <hr>
+    <a href="{% url 'logout' %}" method="post">
+        <button type="submit" class="sair">Logout</button>
+    </a>
+    
+    
+    <h2>Adicione sua Anotação</h2>
+    <a href="{% url 'criar_objeto' %}"><button>Adicionar</button></a>
+
+    <h2>Lista de Anotações</h2>
+    <ul>
+        {% for objeto in objetos %}
+            <li>
+                {{ objeto.nome }}
+                <a href="{% url 'atualizar_objeto' objeto.id %}"><button>Atualizar</button></a>
+                <a href="{% url 'deletar_objeto' objeto.id %}"><button>Deletar</button></a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'mostrar_objeto' %}"><button>Mostrar</button></a>
+    <h2>Envie suas Sugestões</p>
+    <button onclick="redirectToFastAPI()">Sugerir</button>
+    <script>
+        function redirectToFastAPI() {
+            window.location.href = "{% url 'redirect_to_fastapi' %}";
+        }
+    </script>
+</body>
+</html>

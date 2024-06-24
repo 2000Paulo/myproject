@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Novo Objeto</title>
+    <link rel="stylesheet" href="../../static/css/style_create.css">
+</head>
+<body>
+    <h2>Adicionar Anotação</h2>
+    <form method="post" action="{% url 'criar_objeto' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" onclick="mostrarMensagem()">Adicionar Objeto</button>
+        <script>
+            // Função para exibir mensagem de sucesso
+            function mostrarMensagem() {
+                alert("Anotação adicionada com sucesso!");
+            }
+        </script>
+    </form>
+</body>
+</html>

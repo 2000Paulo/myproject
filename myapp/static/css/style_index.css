@@ -1,0 +1,43 @@
+/* Reset básico e estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(journal-2850091.jpg);
+    background-position: center;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #929292;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #013f16;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+div{
+    margin-top: 10%;
+    margin-left: 43%;
+}
+
+button:hover {
+    background-color: #436e51;
+}

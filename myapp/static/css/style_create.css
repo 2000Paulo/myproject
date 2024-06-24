@@ -1,0 +1,64 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte elegante */
+    background-color: #f0f0f0; /* Cor de fundo neutra */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o conteúdo na página */
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do conteúdo */
+    border: 1px solid #ccc; /* Borda ao redor do conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #333; /* Cor do título */
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    margin-top: 5%;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #013f16; /* Cor de fundo do botão */
+    color: white; /* Cor do texto no botão */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Borda arredondada */
+    border: none;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #436e51; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
